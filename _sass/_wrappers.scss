@@ -1,0 +1,24 @@
+.wrapper {
+    margin: auto;
+}
+
+@mixin constrain-text-width($width: $max-width) {
+    & > p,
+    & > ul,
+    & > dl {
+        max-width: $max-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.section-1 {
+    background-color: $stanzas-blue;
+    padding: 2rem;
+    @include constrain-text-width();
+}
+
+.section-2 {
+    padding: 2rem;
+    @include constrain-text-width();
+}

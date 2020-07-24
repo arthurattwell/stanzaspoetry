@@ -1,0 +1,31 @@
+// Sizes
+$max-width: 60rem;
+$line-height: 1.6;
+$border-radius: 0.1rem;
+$modal-border-radius: 1rem;
+$rule-thickness: 2px;
+$curve: 4rem;
+
+// Fonts
+$font-main: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-variable-main: 'Roboto', $font-main;
+
+// Colours
+$color-bg: #f9f9f9;
+$color-text: #262626;
+$color-text-reversed: #f9f9f9;
+$stanzas-blue: #0071b9;
+$stanzas-yellow: #ffd922;
+
+// Break points
+$break-width-small: 420px;
+$break-width-medium: 600px;
+$break-width-large: 900px;
+
+// Import font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+// Import styles. This order matters.
+@import 'type';
+@import 'wrappers';
+@import 'features';
