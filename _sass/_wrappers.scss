@@ -14,11 +14,11 @@
 
 .section-1 {
     background-color: $stanzas-blue;
-    padding: 2rem;
+    padding: 4rem 2rem 2rem 2rem;
     @include constrain-text-width();
 }
 
 .section-2 {
-    padding: 2rem;
+    padding: 4rem 2rem;
     @include constrain-text-width();
 }

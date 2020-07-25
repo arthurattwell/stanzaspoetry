@@ -1,0 +1,101 @@
+// Grid layout for large screens
+
+.section-1,
+.section-2 {
+
+    @media only screen and (min-width: $break-width-medium) {
+        display: grid;
+        grid-template-columns: 3rem 18rem 25rem 3rem;
+        grid-template-rows: repeat(5, 1fr);
+        column-gap: 4rem;
+        justify-content: center;
+    }
+
+    @media only screen and (min-width: $break-width-large) {
+        grid-template-columns: 5rem 25rem 45rem 5rem;
+    }
+}
+
+.section-1 {
+
+    // Extra rows for section 1
+    @media only screen and (min-width: $break-width-large) {
+        grid-template-rows: repeat(7, 1fr);
+    }
+}
+
+@media only screen and (min-width: $break-width-medium) {
+
+    h1 {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+
+    .subheadline {
+        align-self: center;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: span 1;
+
+        @media only screen and (min-width: $break-width-large) {
+            align-self: start;
+            grid-row-start: 3;
+        }
+    }
+
+    hr {
+        align-self: start;
+        grid-column-start: 2;
+        grid-row-start: 3;
+        grid-row-end: span 1;
+        margin: 0 auto;
+
+        @media only screen and (min-width: $break-width-large) {
+            align-self: center;
+            grid-row-start: 4;
+        }
+    }
+
+    .contact {
+        align-self: center;
+        grid-column-start: 2;
+        grid-row-start: 3;
+        grid-row-end: span 3;
+
+        @media only screen and (min-width: $break-width-large) {
+            align-self: auto;
+            grid-row-start: 5;
+        }
+    }
+
+    .description {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+
+    .testimonial {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+    }
+
+    .covers {
+        grid-column-start: 3;
+        grid-row-start: 4;
+        grid-row-end: span 5;
+    }
+
+    .pricing {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: span 4;
+    }
+
+    .poets {
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: span 5;
+    }
+}

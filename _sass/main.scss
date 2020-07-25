@@ -18,14 +18,16 @@ $stanzas-blue: #0071b9;
 $stanzas-yellow: #ffd922;
 
 // Break points
-$break-width-small: 420px;
-$break-width-medium: 600px;
-$break-width-large: 900px;
+$break-width-small: 600px;
+$break-width-medium: 900px;
+$break-width-large: 1200px;
 
 // Import font
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 // Import styles. This order matters.
+@import 'reset';
 @import 'type';
 @import 'wrappers';
+@import 'layout';
 @import 'features';
