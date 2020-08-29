@@ -17,3 +17,7 @@ To change other features, such as the design or interactions, you may need more 
 This is a Jekyll site, so you'll need Jekyll's dependencies installed first. The first time you run the site locally, start by installing the necessary gems by entering `bundle install` at the command line, in this folder.
 
 Then to serve the website on your computer, run `bundle exec jekyll serve` in the same place. In your browser, go to [localhost:4000](http://localhost:4000) to see the site.
+
+## Hosting and deployment
+
+The [stanzaspoetry.org](https://stanzaspoetry.org) site is hosted on Netlify, which deploys the master branch.
