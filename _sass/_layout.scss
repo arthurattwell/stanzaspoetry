@@ -90,7 +90,12 @@
     .pricing {
         grid-column-start: 2;
         grid-row-start: 1;
-        grid-row-end: span 4;
+        grid-row-end: span all;
+
+        @media only screen and (min-width: $break-width-large) {
+            align-self: end;
+            margin-bottom: 1rem !important;
+        }
     }
 
     .poets {
