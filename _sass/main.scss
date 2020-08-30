@@ -7,8 +7,8 @@ $rule-thickness: 2px;
 $curve: 4rem;
 
 // Fonts
-$font-main: 'Dosis', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-$font-variable-main: 'Dosis', $font-main;
+$font-main: 'Barlow', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-variable-main: 'Barlow', $font-main;
 
 // Colours
 $color-bg: #f9f9f9;
@@ -23,7 +23,7 @@ $break-width-medium: 900px;
 $break-width-large: 1200px;
 
 // Import font
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap');
 
 // Import styles. This order matters.
 @import 'reset';
