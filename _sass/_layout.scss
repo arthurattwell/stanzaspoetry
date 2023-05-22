@@ -6,7 +6,7 @@
     @media only screen and (min-width: $break-width-medium) {
         display: grid;
         grid-template-columns: 3rem 18rem 25rem 3rem;
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: auto;
         column-gap: 4rem;
         justify-content: center;
     }
@@ -60,13 +60,8 @@
     .contact {
         align-self: center;
         grid-column-start: 2;
-        grid-row-start: 3;
-        grid-row-end: span 3;
-
-        @media only screen and (min-width: $break-width-large) {
-            align-self: auto;
-            grid-row-start: 5;
-        }
+        grid-row-start: 4;
+        grid-row-end: span 5;
     }
 
     .description {
@@ -85,6 +80,7 @@
         grid-column-start: 3;
         grid-row-start: 4;
         grid-row-end: span 5;
+        align-content: center;
     }
 
     .pricing {
