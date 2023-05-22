@@ -21,9 +21,10 @@
 .section-2 {
     padding: 4rem 2rem;
     @include constrain-text-width();
-}
 
-.footer {
-    background-color: $stanzas-blue;
-    min-height: 1rem;
+    border: 10px solid $stanzas-blue;
+    border-top: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }

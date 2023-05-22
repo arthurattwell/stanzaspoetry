@@ -15,6 +15,12 @@
         max-width: 20%;
         margin: 0.5rem;
     }
+
+    // On large screens, shift up because grid layout
+    // places these too low down.
+    @media only screen and (min-width: $break-width-large) {
+        margin-top: -3rem;
+    }
 }
 
 .subheadline {
